@@ -1,0 +1,140 @@
+.categoryManager {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.categoryManager h2 {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+  font-size: 1.3rem;
+}
+
+.form {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.colorPicker {
+  width: 50px;
+  height: 42px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addBtn {
+  padding: 0.75rem 1.5rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addBtn:hover {
+  background-color: #059669;
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.categoryItem:hover {
+  background-color: #f3f4f6;
+}
+
+.categoryInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.colorBox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.categoryName {
+  font-weight: 500;
+  color: #374151;
+}
+
+.deleteBtn {
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.deleteBtn:hover {
+  background-color: #dc2626;
+}
+
+.emptyState {
+  text-align: center;
+  color: #9ca3af;
+  padding: 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .formGroup {
+    flex-wrap: wrap;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .colorPicker {
+    flex: 1;
+  }
+
+  .addBtn {
+    flex: 1;
+  }
+}

@@ -1,0 +1,179 @@
+.todoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.todoItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoItem.completed {
+  opacity: 0.6;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.description {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.category {
+  padding: 0.25rem 0.75rem;
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.editBtn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #2563eb;
+}
+
+.deleteBtn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #dc2626;
+}
+
+.priority {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-high {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border-left: 4px solid #dc2626;
+}
+
+.priority-medium {
+  background-color: #fef3c7;
+  color: #d97706;
+  border-left: 4px solid #f59e0b;
+}
+
+.priority-low {
+  background-color: #d1fae5;
+  color: #059669;
+  border-left: 4px solid #10b981;
+}
+
+.dueDate {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.dueDate-overdue {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border-left: 3px solid #dc2626;
+}
+
+.dueDate-today {
+  background-color: #fed7aa;
+  color: #ea580c;
+  border-left: 3px solid #f97316;
+}
+
+.dueDate-soon {
+  background-color: #fef3c7;
+  color: #d97706;
+  border-left: 3px solid #f59e0b;
+}
+
+.dueDate-normal {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  border-left: 3px solid #6366f1;
+}
